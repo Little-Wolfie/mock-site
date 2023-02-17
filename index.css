@@ -107,9 +107,14 @@ body {
 /* - function - */
 .code {
   background-color: #252525;
-  width: 75%;
+  width: fit-content;
   height: auto;
-  margin: 20px auto;
+  margin: 10px auto;
+}
+.code div {
+  width: fit-content;
+  height: fit-content;
+  margin: 20px;
 }
 .f {
   color: rgb(21, 80, 255);
@@ -121,6 +126,7 @@ body {
 }
 .vname {
   color: lightseagreen;
+  text-align: center;
 }
 .curly {
 }
