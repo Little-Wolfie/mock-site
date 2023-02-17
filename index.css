@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Quicksand&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+
+  font-family: "DM Sans", sans-serif;
+  /*font-family: 'Quicksand', sans-serif;*/
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c1c1c;
+}
+
+.navbar {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin: 4px 10px 0 0;
+}
+.btn {
+  width: 75px;
+  height: 35px;
+  border: 1px solid #e60051;
+  border-radius: 15px;
+  color: #e60051;
+  background-color: #1c1c1c;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #1c1c1c;
+  background-color: #e60051;
+}
+#topBtn {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 50%;
+  right: 50%;
+  bottom: 55px;
+  width: 100px;
+  height: 50px;
+  font-size: 1.3rem;
+  border: 1px solid #e60051;
+  border-radius: 15px;
+  color: #e60051;
+  background-color: #1c1c1c;
+  cursor: pointer;
+}
+#topBtn:hover {
+  color: #1c1c1c;
+  background-color: #e60051;
+}
+
+#top {
+  font-size: 2rem;
+}
+.page-title {
+  font-size: 1.5rem;
+  color: #e60051;
+  margin: 10px 0;
+  margin-left: 25px;
+}
+
+.chunky {
+  border-bottom: 5px solid #afff00;
+}
+.thin {
+  border-bottom: 1px solid #afff00;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.opening-article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.article-title {
+  display: inline-block;
+  width: 300px;
+  margin: 20px 0 0 25px;
+  font-size: 1.15rem;
+}
+.article-body {
+  display: inline-block;
+  width: 90%;
+  height: auto;
+  text-align: justify;
+  margin: 10px auto;
+}
+
+.list {
+  display: inline-block;
+  width: 50%;
+  margin: 5px auto;
+}
+.list,
+.list li,
+.list ul {
+  background-color: #252525;
+}
+
+/* - function - */
+.code {
+  background-color: #252525;
+  width: 75%;
+  height: auto;
+  margin: 20px auto;
+}
+.f {
+  color: rgb(21, 80, 255);
+}
+.fname {
+  color: rgb(220, 255, 81);
+}
+.bracket {
+}
+.vname {
+  color: lightseagreen;
+}
+.curly {
+}
+.fbody {
+  display: block;
+  margin-left: 25px;
+  color: rgb(9, 166, 9);
+}

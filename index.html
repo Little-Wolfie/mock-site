@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <button class="btn">Press</button>
+          <button class="btn">Press</button>
+          <button class="btn">Press</button>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <strong><h1 class="page-title" id="top">HTML Overview</h1></strong>
+      <div class="chunky"></div>
+      <h3 class="page-title">The Advantages Of Semantics</h3>
+      <div class="thin"></div>
+
+      <article class="opening-article">
+        <h4 class="article-title">What is semantic HTML?</h4>
+        <p class="article-body">
+          Semantic HTML refers to the notion that your code should be reabable,
+          it's all well and fine when it's just you working on a project, but
+          what about a whole team, we all can't use divs for everything, imagine
+          the chaos of trying to sift through hundreds of divs, albeit you could
+          use a find feature, but there are better ways, mostly it should become
+          a habit, but mostly developers these days are expected to write
+          semantic HTML right out of the gate. This way, people who join the
+          project later can at least navigate the code with moderate ease,
+          there's nothing wrong with divs, they have their uses, mainly we use
+          divs inside of other semantically labelled elements, to divide up
+          content.
+        </p>
+        <p class="article-body">
+          Although some opt out of using divs entirely and use a section
+          element, as section, the word has a semantic meaning, I use divs to
+          create actual dividers, inside of sections. So what are we talking
+          about when we say semantic HTML, well, there are so many semantic
+          elements, it would be impossible for me to cover them all, but
+          basically you want to use an element that has a tag that is more
+          descriptive in relation to the type of content it holds, for instance
+          a header or footer tag, a nav element for your page navigation,
+          article for collections of information, a figure to holds images and
+          relevant info, i think you get the idea, these elements don't do much
+          except act like divs, but at a glance you can understand what that
+          piece of code is doing by it's element.
+        </p>
+        <p class="article-body">
+          Look at the code snippet below, imagine, you are asked to perform a
+          task or debug a system, then you see a function like this, sure, it's
+          a function, what it does though, is anyone's guess, the same can be
+          said for a file full of divs, you could read the classes but some divs
+          dont have a class, some have multiple, it would be much easier to swap
+          out the name div for a more semantic name.
+        </p>
+
+        <div class="code">
+          <div class="code">
+            <span class="f">function </span><span class="fname">namedFunc</span
+            ><span class="bracket">(</span><span class="vname">variable</span
+            ><span class="bracket">) </span><span class="curly">{</span>
+            <span class="fbody">//do stuff;</span><span class="curly">}</span>
+          </div>
+        </div>
+
+        <h4 class="article-title list">TLDR</h4>
+        <div class="list">
+          <ul>
+            <li>Makes websites more accessible</li>
+            <li>Makes the source code more readable</li>
+            <li>Gives context to elements and contents</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+    <br />
+    <div class="thin"></div>
+    <footer>
+      <p>More info on <a>semantic HTML</a></p>
+      <button
+        title="Go to top"
+        type="button"
+        onclick="topFunction()"
+        id="topBtn"
+      >
+        ^ Top ^
+      </button>
+    </footer>
+  </body>
+</html>
