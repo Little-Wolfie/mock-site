@@ -18,13 +18,13 @@
         </div>
       </nav>
     </header>
+
     <section>
       <strong><h1 class="page-title" id="top">HTML Overview</h1></strong>
       <div class="chunky"></div>
+      
       <h3 class="page-title">The Advantages Of Semantics</h3>
-      <div class="thin"></div>
-
-      <article class="opening-article">
+      <article class="article-container" id="semantic-html">
         <h4 class="article-title">What is semantic HTML?</h4>
         <p class="article-body">
           Semantic HTML refers to the notion that your code should be readable,
@@ -62,17 +62,28 @@
           out the name div for a more semantic name.
         </p>
 
-        <div class="code">
-          <div>
-            <span class="f">function </span><span class="fname">namedFunc</span>
-            <span class="bracket">(</span><span class="vname">variable</span>
-            <span class="bracket">) </span><span class="curly">{</span>
-            <span class="fbody">//do stuff;</span><span class="curly">}</span>
+        <div class="snippet-container">
+          <div class="code">
+            <div>
+              <span class="f">function </span><span class="fname">namedFunc</span>
+              <span class="bracket">(</span><span class="vname">variable</span>
+              <span class="bracket">) </span><span class="curly">{</span>
+              <span class="fbody">//do stuff;</span><span class="curly">}</span>
+            </div>
+          </div>
+          <span class="large-text">></span>
+          <div class="code">
+            <div>
+              <span class="f">function </span><span class="fname">DoubleNumber</span>
+              <span class="bracket">(</span><span class="vname">num</span>
+              <span class="bracket">) </span><span class="curly">{</span>
+              <span class="fbody">//do some multiplication;</span><span class="curly">}</span>
+            </div>
           </div>
         </div>
-
-        <h4 class="article-title list">TLDR</h4>
+        
         <div class="list">
+          <h4>TLDR</h4>
           <ul>
             <li>Makes websites more accessible</li>
             <li>Makes the source code more readable</li>
@@ -80,11 +91,51 @@
           </ul>
         </div>
       </article>
+
+      <br />
+      <div class="thin"></div>
+      <br>
+
+      <h3 class="page-title">First Things First</h3>
+      <article class="article-container" id="declaring">
+        <h4 class="article-title">Declaring your document</h4>
+
+        <p class="article-body">
+          It is required to add 
+          <span class='bracket'><</span>!<span class='f'>DOCTYPE</span> 
+          <span class="fname">html</span>> at the beginning of your html file, This
+          ensures the browser won't try and load the file with an incompatible renderer,
+          try not to forget it, as you might not get affected by the issues.
+          This is a self closing element, self closing elements close themselves within their
+          own opening tag, so, self explanatory, although what you may not know is the forward slash (/) 
+          is actually optional in self closing elements, NOT to be mistaken with the 
+          forward slash in the closing tags for a h1 etc.
+        </p>
+        <br>
+        <h4 class="article-title">The 
+          <span class='bracket'><</span><span class='f'>html</span> 
+          <span class="fname">lang="en"</span>> element
+        </h4>
+        <p class="article-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed assumenda ipsam asperiores ratione dolor quae amet omnis soluta quos alias, illum dicta quaerat excepturi? Sequi atque dicta odit eum est?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sit illum mollitia in maiores quaerat numquam dolore, molestiae esse ducimus accusamus quasi blanditiis deleniti aut. Tempore tenetur modi excepturi sequi?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptate eius consectetur magnam nesciunt incidunt unde nostrum natus molestias optio corrupti sit odit, neque sunt? Aspernatur culpa voluptates perferendis vel!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officiis quam ipsum sit nostrum? Possimus quod officia, earum ipsam labore, unde delectus minus ipsa eligendi ratione pariatur voluptatum facilis asperiores.
+            
+          </p>
+      </article>
+
     </section>
-    <br />
-    <div class="thin"></div>
+
     <footer>
-      <p>More info on <a>semantic HTML</a></p>
+      <br><br><br>
+      <div class="chunky"></div>
+      <br>
+      <p>More info on <a 
+        href="https://www.w3schools.com/html/html5_semantic_elements.asp"
+        target="_blank">
+        semantic HTML</a></p>
+
       <button
         title="Go to top"
         type="button"
